@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organisation Impact Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      
+      --royal-blue: #02010d;   
+      --gold: #FFD700;         
+
+      /* Supporting Accents */
+      --blush-pink: #F2A5B5;   
+      --charcoal: #2E2E2E;    
+      --ivory: #FAF8F1;        
+
+      /* Neutrals */
+      --light-gray: #E5E5E5;   
+      --off-white: #F9F9F9;    
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--off-white);
+      color: var(--charcoal);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--royal-blue), #001a4d);
+      color: white;
+      padding: 5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 750px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--royal-blue);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+
+    .section-light {
+      background: var(--off-white);
+    }
+
+    .section-soft {
+      background: var(--ivory);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--royal-blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background:  gold: #FFD700;         /* Accent / Buttons */
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      background: rgb(249, 249, 41);
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      color: var(--royal-blue);
+      margin-bottom: 0.8rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: var(--gold);
+      color: #000;
+      text-decoration: none;
+      border-radius: 2rem;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background: var(--royal-blue);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+    <li><img src="p.jpeg" alt width="300" height="300"></li> 
+  <h1>Designing Impact Through Innovation</h1>
+  <p>Showcasing our programs, people, and measurable impact with transparency and purpose.</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#programs">Past Programs</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#team">Our Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about" class="section-light">
+  <div class="section-title">
+    <h2>About Us</h2>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Who We Are</h3><p>A purpose-driven organisation focused on long-term community development.</p></div>
+    <div class="card"><h3>Our Motto</h3><p>Empowering people. Creating sustainable impact.</p></div>
+    <div class="card"><h3>Our Services</h3><p>Training, mentorship, innovation programs, and impact reporting.</p></div>
+    <div class="card"><h3>Why Choose Us</h3><p>Transparency, accountability, and measurable outcomes.</p></div>
+  </div>
+</section>
+
+<section id="programs" class="section-soft">
+  <div class="section-title">
+    <h2>Past Programs</h2>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Reports</h3><p>Detailed documentation of completed programs and outcomes.</p></div>
+    <div class="card"><h3>Our Talents</h3><p>Participants nurtured through skills development initiatives.</p></div>
+    <div class="card"><h3>Outstanding Talents</h3><p>Highlighting exceptional achievements and success stories.</p></div>
+    <div class="card"><h3>Feedback</h3><p>What beneficiaries and partners say about our work.</p></div>
+  </div>
+</section>
+
+<section id="impact" class="section-light">
+  <div class="section-title">
+    <h2>Impact</h2>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Documentation</h3><p>Evidence-based reporting demonstrating our social and economic impact.</p></div>
+  </div>
+</section>
+
+<section id="team" class="section-soft">
+  <div class="section-title">
+    <h2>Our Team</h2>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Facilitators</h3><p>Experienced professionals guiding and supporting all programs.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section-light">
+  <div class="section-title">
+    <h2>Contact Details</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <p>Email: info@example.org</p>
+      <p>Phone: +266 000 0000</p>
+      <a href="#" class="btn">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 | Designed with HTML & Modern CSS | GitHub Pages Ready</p>
+</footer>
+
+</body>
+</html>
